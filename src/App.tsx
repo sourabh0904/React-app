@@ -1,4 +1,6 @@
 import Message from "./Message";
+import Alert from "./components/Alert";
+import Button from "./components/Button";
 import ListGroup from "./components/ListGroup";
 
 function App() {
@@ -8,6 +10,12 @@ function App() {
   };
   return (
     <div>
+      <Button color="danger" onclick={() => console.log("clicked")}>
+        Button
+      </Button>
+      <Alert>
+        hello<span> World</span>
+      </Alert>
       <ListGroup
         iteam={iteam}
         heading="Cities"
